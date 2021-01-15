@@ -28,6 +28,7 @@
 		9B699C2B25B11B8A0053DCEB /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699C2A25B11B8A0053DCEB /* XDismissButton.swift */; };
 		9B699C2E25B124160053DCEB /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699C2D25B124160053DCEB /* AccountViewModel.swift */; };
 		9B699C3125B1255F0053DCEB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699C3025B1255F0053DCEB /* String+Ext.swift */; };
+		9B699C3425B134620053DCEB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699C3325B134620053DCEB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		9B699C2A25B11B8A0053DCEB /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		9B699C2D25B124160053DCEB /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		9B699C3025B1255F0053DCEB /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		9B699C3325B134620053DCEB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				9B52197725AD992E00744608 /* Appetizer.swift */,
+				9B699C3325B134620053DCEB /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				9B52198425ADBC5400744608 /* AppetizerListViewModel.swift in Sources */,
 				9B159E9E25B0FF80005BCBD8 /* Color+Ext.swift in Sources */,
 				9B07758525AC6675003E63DE /* AccountView.swift in Sources */,
+				9B699C3425B134620053DCEB /* User.swift in Sources */,
 				9B159EBB25B1108B005BCBD8 /* APButton.swift in Sources */,
 				9B159E9B25B0FEDB005BCBD8 /* LoadingView.swift in Sources */,
 				9B159EB625B10D26005BCBD8 /* AppetizerDetailView.swift in Sources */,

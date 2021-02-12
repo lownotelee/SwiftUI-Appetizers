@@ -11,17 +11,17 @@ struct AppetizerListView: View {
     
     @StateObject var viewModel = AppetizerListViewModel()
     
-
-    
-    
     var body: some View {
         ZStack {
             NavigationView{
                 List(viewModel.appetizers) { appetizer in
                     AppetizerListCell(appetizer: appetizer)
                         .onTapGesture {
-                            viewModel.isShowingDetail = true
-                            viewModel.selectedAppetizer = appetizer
+                            withAnimation {
+                                viewModel.isShowingDetail = true
+                                viewModel.selectedAppetizer = appetizer
+                            }
+                            
                         }
                     
                 }

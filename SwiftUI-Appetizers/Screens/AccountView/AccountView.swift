@@ -11,8 +11,6 @@ struct AccountView: View {
     
     @StateObject var viewModel = AccountViewModel()
     
-
-    
     var body: some View {
         NavigationView{
             Form {
@@ -23,7 +21,7 @@ struct AccountView: View {
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    DatePicker("Birthday", selection: $viewModel.user.birthdate, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $viewModel.user.birthdate, in: Date().oneHundredAndTenYearsAgo...Date().eighteenYearsAgo, displayedComponents: .date)
                     
                     Button {
                         viewModel.saveChanges()
@@ -55,5 +53,6 @@ struct AccountView: View {
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
         AccountView()
+            .preferredColorScheme(.dark)
     }
 }
